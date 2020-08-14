@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <script>
+            function add() {
+                var header=document.createElement('h3');
+                var textNode=document.createTextNode('내 이름은 홍길동입니다.');
+                header.appendChild(textNode);
+                document.body.appendChild(header);
+            };
+            function remove() {
+                var a = document.body.getElementsByTagName("h3")
+                document.body.removeChild(a[0]);
+            };
+        </script>
+    </head>
+    <body>
+        <a href="#" onclick="add()">당신의 이름은 무엇입니까?</a>
+        <a href="#" onclick="remove()">삭제</a>
+    </body>
+</html>
